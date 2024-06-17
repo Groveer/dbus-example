@@ -107,12 +107,12 @@ int client_start(short mode)
         return ret;
 
     // set timeout
-    uint64_t timeout = 0;
-    if ((ret = sd_bus_get_method_call_timeout(sdbus, &timeout)) < 0)
-        return ret;
-    printf("default timeout: %lu\n", timeout);
-    if ((ret = sd_bus_set_method_call_timeout(sdbus, 2 * 1000 * 1000)) < 0)
-        return ret;
+    /*uint64_t timeout = 0;*/
+    /*if ((ret = sd_bus_get_method_call_timeout(sdbus, &timeout)) < 0)*/
+    /*    return ret;*/
+    /*printf("default timeout: %lu\n", timeout);*/
+    /*if ((ret = sd_bus_set_method_call_timeout(sdbus, 2 * 1000 * 1000)) < 0)*/
+    /*    return ret;*/
 
     if (mode == 0)
         call_method();

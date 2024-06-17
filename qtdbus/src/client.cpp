@@ -27,8 +27,8 @@ void Client::initServerInfo()
                        "CountChanged",
                        this,
                        SLOT(onCountChanged(uint)));
-    qCInfo(client) << "default timeout: " << m_serverInterface->timeout();
-    m_serverInterface->setTimeout(2 * 1000);
+    /*qCInfo(client) << "default timeout: " << m_serverInterface->timeout();*/
+    /*m_serverInterface->setTimeout(2 * 1000);*/
 }
 
 void Client::onCountChanged(uint value)

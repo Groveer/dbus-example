@@ -47,7 +47,7 @@ int counter_set(sd_bus *bus,
 int increment(sd_bus_message *message, void *user_data, sd_bus_error *error)
 {
     // test for timeout
-    sleep(3);
+    /*sleep(3);*/
 
     int ret = 0;
     uint32_t parameter = 0;

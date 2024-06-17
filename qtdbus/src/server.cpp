@@ -35,7 +35,9 @@ void Server::initDBus()
 
 uint Server::IncrementBy(uint value)
 {
-    sleep(5);
+    // test for timeout
+    /*sleep(5);*/
+
     m_count += value;
     Q_EMIT CountChanged(m_count);
     return m_count;
