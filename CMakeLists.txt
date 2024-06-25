@@ -11,3 +11,4 @@ project(dbus-test
 
 add_subdirectory(qtdbus)
 add_subdirectory(sdbus)
+add_subdirectory(memfd)
